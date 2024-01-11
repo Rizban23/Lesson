@@ -73,6 +73,13 @@
     
   //     }
 
+  // task 
+
+  document.querySelector("button").onclick = () =>{
+  let comment = document.querySelector("input").value
+  comment += "<hr>"
+  document.querySelector('div').innerHTML = comment + document.querySelector("div").innerHTML
+  }
 
   // Task 4
 

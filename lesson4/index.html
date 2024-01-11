@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+
+    <form  id="form">
+        <table > 
+            <tr>
+                <td>Ф.И.О<span</td>
+                <td> <input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Логин</td>
+                <td> <input type="text" name="name" id="login"></td>
+            </tr>
+            <tr>
+                <td>Пароль</td>
+                <td> <input type="password" name="password" id="password"></td>
+
+            </tr>
+            <tr>
+               <td>Повтор пароля *</td>
+                <td> <input type="password" name="password" id="password-2"></td>
+                <td><p id="message"></p></td>
+            </tr>
+            <tr>
+                <td>Email*</td>
+                 <td> <input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Город</td>
+                <td><select name="town"  required>
+                <option value="" disabled selected>Не определен</option>
+                <option value="town1">Town 1</option>
+                <option value="town2">Town 2</option>
+                <option value="town3">Town 3</option>
+                </select><br></td>
+            </tr>
+        <tr>
+            <td id="center">Дгругой город</td>
+            <td> <input type="text" name="town" ></td>
+        </tr>
+        <tr>
+            <td>Муниципалитет</td>
+            <td><select name="town" required>
+            <option value="" disabled selected>Нет в списке</option>
+            <option value="town1">Town 1</option>
+            <option value="town2">Town 2</option>
+            <option value="town3">Town 3</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td id="center">Дгругой город</td><br>
+            <td> <input type="text"  ></td>
+        </tr>
+        <tr>
+            <td>Учреждение</td>
+            <td> <input type="text" name="name" id="local"></td>
+        </tr>
+        <tr>
+            <td>Класс</td>
+            <td> <input type="text" name="name" id="class"></td>
+        </tr>
+        <tr>
+            <td>Должность</td>
+            <td> <input type="text" name="name" id="job"></td>
+        </tr>
+        <tr>
+            <td>Дата рождения (ДД.ММ.ГГГГ)</td>
+            <td> <input type="number" name="number" id="birhday"></td>
+        </tr>
+        <tr>
+            <td>Защитный код</td>
+            <td><input type="number" name="code" id="code">
+            <span id="code1"></span>
+            <span id="code2"></span>
+            <span id="code3"></span>
+            <span id="code4"></span>
+            <span id="code5"></span>
+            <span id="code6"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td  ><input type="checkbox"><span>с правилами ознакомлен</span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="validate()" id="button" type="submit" >Регистрация</button></td>
+        </tr>
+        
+        
+       
+            
+        </table>
+    </form>
+
+
+    <!-- <form>
+        <label for="name"> Ф.И.О</label>
+        <input type="text"  name="name" id="name"><br><br>
+        <label > <Логин</label>
+        <input type="name-2"  name="name-2" id="login"><br><br>
+        <label for="name"> Пароль</label>
+        <input type="password" placeholder="password" name="password" id="password"><br><br>
+        <label> Повтор пароля</label>
+        <input type="password" name="password-2" id="password-2"><br><br>
+        <label for="name"> Email</label>
+        <input type="email"  name="email" id="emaik"><br><br>
+        <label for="town">Город</label>
+        <select id="town" name="town" required>
+          <option value="" disabled selected>Не определен</option>
+          <option value="town1">Town 1</option>
+          <option value="town2">Town 2</option>
+          <option value="town3">Town 3</option>
+        </select><br>
+        <span>Другой город:</span>
+        <input type="text"  name="text" id="text"><br><br>
+        <label for="town">Муниципалитет</label>
+        <select id="town" name="town" required>
+            <option value="" disabled selected>Нет в списке</option>
+            <option value="town1">Town 1</option>
+            <option value="town2">Town 2</option>
+            <option value="town3">Town 3</option>
+          </select><br>
+          <span>Другой Муниципалитет:</span><br>
+          <input type="text"  name="text" id="text"><br><br>
+          <label for="name">Учреждение</label>
+          <input type="text"  name="name" id="textname"><br><br>
+          <label > Класс</label>
+          <input type="text"  name="name" id="textname"><br><br>
+          <label>Должность</label>
+          <input type="text"  name="name" id="textname"><br><br>
+          <label >Дата рождения (ДД.ММ.ГГГГ)</label>
+          <input type="number"  name="number" id="number"><br><br>
+          <label >Защитный код *</label>
+          <input type="number"  name="number" id="number"><br><br>
+    </form> -->
+
+    <script src="./main.js"></script>
+</body>
+</html>
