@@ -1,0 +1,158 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    min-height: 100vh;
+    background: #86a8ba;
+}
+header{
+    position: absolute;
+    width: 100%;
+    min-height: 66px;
+    background: #42a5f6;
+    padding: 0 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+header .logo{
+    color: #fff;
+    font-size: 1.75rem;
+    text-decoration: none;
+    max-width: 25%;
+}
+header nav{
+    max-width: 60%;
+    float: right;
+}
+header ul{
+    position: relative;
+    /* display: flex; */
+}
+header ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+header ul li a{
+color: #fff;
+font-size: 1.2rem;
+text-decoration: none;
+display: flex;
+justify-content: space-between;
+padding: 20px 25px;
+}
+header ul li a i{
+    padding: 3px;
+}
+header ul li a:hover{
+    background: rgba(194, 238, 229, 0.2);
+}
+header .menuBar{
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+.visib{
+    display: none;
+    position: absolute;
+    top: 66px;
+    /* right: 800px; */
+    left: 180px;
+    width: 200px;
+    background: #445964;
+}
+.hidden{
+    display: none;
+    position: absolute;
+    top: 66px;
+    right: -35px;
+    /* left: 350px; */
+    /* right: 0; */
+    width: 200px;
+    background: #445964;
+}
+ .visib.about{
+    position: absolute;
+    
+    flex-direction: column;
+    /* padding-top: 60px; */
+    /* display: none; */
+ }
+ .hidden.drop{
+    position: absolute;
+    /* width: 200px; */
+    /* background: #445964; */
+    flex-direction: column; 
+    /* display: none; */
+ }
+ .visib.active{
+    display: flex;
+}
+.hidden.active{
+    display: flex;
+}
+
+@media (max-width:1040px){
+    header nav{
+        display: none;
+    }
+   header .menuBar{
+        display: block;
+    }
+}
+ 
+@media (max-width:900px){
+    header{
+        padding: 10px 0;
+    }
+    header nav{
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        background: #67b4dd;
+        padding-left: 40%;
+        display: none;
+    }
+    header.active nav{
+        display: inline-block;
+    }
+    header nav i{
+        position: absolute;
+        left: 110px;
+
+    }
+    header .menuBar{
+        display: block;
+        padding-right: 20px;
+    }
+    header nav ul li{
+        width: 100%;
+        display: block;
+        
+        
+
+    }
+    header .visib{
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 200px;
+    }
+
+    .hidden.drop{
+        /* right: 270px; */
+        /* position: relative; */
+        width: 100%;
+        left: 0;
+        top: 300px;
+    }
+    .menuBar.active{
+        display: flex;
+    }
+}
