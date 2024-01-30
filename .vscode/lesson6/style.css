@@ -139,7 +139,7 @@ header .menuBar{
 
     }
     header .visib{
-        position: relative;
+        position: static;
         width: 100%;
         left: 0;
         top: 200px;
@@ -154,5 +154,8 @@ header .menuBar{
     }
     .menuBar.active{
         display: flex;
+    }
+    
+
     }
 }
